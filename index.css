@@ -175,7 +175,8 @@ li:hover, .active {
 
 .btn-action {
   background-color: #EEF3FF;
-  padding: 5px
+  padding: 5px;
+  cursor: pointer;
 }
 
 .container-table {
@@ -246,12 +247,21 @@ h3 { margin: 0 }
   position: relative;
 }
 
+.btn-dropdown {
+  border: none;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.btn-download-dropdown {
+  border: 0;
+}
+
 .menu-dropdown {
   position: absolute;
   background: #fff;
   margin-top: 10px;
   width: 200px;
-  height: 200px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -277,8 +287,10 @@ h3 { margin: 0 }
   background-color: #EAF1FE;
 }
 
-.btn-dropdown:focus > .menu-dropdown {
+.btn-dropdown:focus > .menu-dropdown,
+.btn-download-dropdown:focus > .menu-dropdown {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0px);
 }
+

@@ -116,13 +116,12 @@
         <div style="padding: 8px 24px 8px 0; background-color: #fff;">
           <div class="wrapper-filter">
             <menu style="flex-direction: row; gap: 12px">
-              <button class="btn-dropdown" style="border: none;">
+              <button class="btn-dropdown">
                 <li class="dropdown active" style="min-width: 190px">
                   <img alt="eye-icon" src="./images/calendar.png" />
                   Last 7 days
                   <i class="arrow down" style="border-color: #2C4BEE"></i>
                 </li>
-  
   
                 <ul class="menu-dropdown">
                   <li>Today</li>
@@ -132,11 +131,21 @@
                 </ul>
               </button>
   
-              <li class="active" style="min-width: 190px;">
-                <img alt="eye-icon" src="./images/sun.png" />
-                All plant
-                <i class="arrow down" style="border-color: #2C4BEE"></i>
-              </li>
+              <button class="btn-dropdown">
+                <li class="active" style="min-width: 190px;">
+                  <img alt="eye-icon" src="./images/sun.png" />
+                  All plant
+                  <i class="arrow down" style="border-color: #2C4BEE"></i>
+                </li>
+
+                <ul class="menu-dropdown">
+                  <li>All plant</li>
+                  <li>Sample plant A</li>
+                  <li>Sample plant B</li>
+                  <li>Sample plant C</li>
+                  <li>Sample plant D</li>
+                </ul>
+              </button>
             </menu>
           </div>
         </div>
@@ -226,9 +235,14 @@
                     <img alt="eye-icon" src="./images/arrows-expand.png" />
                   </div>
 
-                  <div class="btn-action">
+                  <button class="btn-action btn-download-dropdown">
                     <img alt="eye-icon" src="./images/download.png" />
-                  </div>
+                    <ul class="menu-dropdown" style="margin-left: -20px">
+                      <li>Export to Excel file</li>
+                      <li>Export to PDF file</li>
+                      <li>Export to image file</li>
+                    </ul>
+                  </button>
                 </div>
               </div>
               
@@ -464,33 +478,16 @@
                       <img alt="eye-icon" src="./images/arrows-expand.png" />
                     </div>
   
-                    <div class="btn-action">
+                    <button class="btn-action btn-download-dropdown">
                       <img alt="eye-icon" src="./images/download.png" />
-                    </div>
+                      <ul class="menu-dropdown" style="margin-left: -185px">
+                        <li>Export to Excel file</li>
+                        <li>Export to PDF file</li>
+                        <li>Export to image file</li>
+                      </ul>
+                    </button>
                   </div>
                 </div>
-
-                <!-- <div class="bar-chart-block block">
-                  <h2 class='titular'>By Country <span>*1000</span></h2>
-                  <div class='grafico bar-chart'>
-                    <ul class='eje-y'>
-                      <li data-ejeY='60'></li>
-                      <li data-ejeY='45'></li>
-                      <li data-ejeY='30'></li>
-                      <li data-ejeY='15'></li>
-                      <li data-ejeY='0'></li>
-                    </ul>
-                    <ul class='eje-x'>
-                      <li data-ejeX='37'><i>España</i></li>
-                      <li data-ejeX='56'><i>Portugal</i></li>
-                      <li data-ejeX='25'><i>Italia</i></li>
-                      <li data-ejeX='18'><i>Grecia</i></li>
-                      <li data-ejeX='45'><i>EE.UU</i></li>
-                      <li data-ejeX='50'><i>México</i></li>
-                      <li data-ejeX='33'><i>Chile</i></li>
-                    </ul>
-                  </div>
-                </div> -->
               </div>
 
               <!-- Line Chart  -->
@@ -503,9 +500,14 @@
                       <img alt="eye-icon" src="./images/arrows-expand.png" />
                     </div>
   
-                    <div class="btn-action">
-                      <img alt="eye-icon" src="./images/sun.png" />
-                    </div>
+                    <button class="btn-action btn-download-dropdown">
+                      <img alt="eye-icon" src="./images/download.png" />
+                      <ul class="menu-dropdown"  style="margin-left: -185px">
+                        <li>Export to Excel file</li>
+                        <li>Export to PDF file</li>
+                        <li>Export to image file</li>
+                      </ul>
+                    </button>
                   </div>
                 </div>
               </div>
