@@ -253,8 +253,9 @@ h3 { margin: 0 }
   border-radius: 8px;
 }
 
-.btn-download-dropdown {
+.btn-download-dropdown, .btn-collapse {
   border: 0;
+  /* background-color: transparent; */
 }
 
 .menu-dropdown {
@@ -294,3 +295,12 @@ h3 { margin: 0 }
   transform: translateY(0px);
 }
 
+.child-collapse {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s all ease-in-out;
+}
+
+.btn-collapse:focus > .child-collapse {
+  max-height: 100vh;
+}
