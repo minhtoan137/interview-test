@@ -49,7 +49,7 @@
 
         <div style="padding: 24px 8px">
           <menu>
-            <button class="btn-collapse active" style="padding: 0">
+            <button class="btn-collapse active" style="padding: 0; width: 100%">
               <li>
                 <img alt="eye-icon" src="./images/vector.png" />
                 Sample Plant A
@@ -119,7 +119,7 @@
         <!-- Filter Header -->
         <div style="padding: 8px 24px 8px 0; background-color: #fff;">
           <div class="wrapper-filter">
-            <menu style="flex-direction: row; gap: 12px">
+            <menu style="flex-direction: row; gap: 12px; margin: 0">
               <button class="btn-dropdown">
                 <li class="dropdown active" style="min-width: 190px">
                   <img alt="eye-icon" src="./images/calendar.png" />
@@ -492,6 +492,40 @@
                     </button>
                   </div>
                 </div>
+
+                <!-- Bar chart -->
+                <!-- https://codepen.io/jlalovi/details/bIyAr -->
+                <div class="container">
+                  <div class="bar-chart-block block">
+                    <div class='grafico bar-chart'>
+                      <p style="margin: 0; transform: rotate(-90deg); position: absolute; top: 40%; left: 0%">kWh</p>
+                      <ul class='eje-y'>
+                        <li data-ejeY='100'></li>
+                        <li data-ejeY='75'></li>
+                        <li data-ejeY='50'></li>
+                        <li data-ejeY='25'></li>
+                        <li data-ejeY='0'></li>
+                      </ul>
+                      <ul class='eje-x'>
+                        <li data-ejeX='37'><i>28/4</i></li>
+                        <li data-ejeX='56'><i>29/4</i></li>
+                        <li data-ejeX='25'><i>30/4</i></li>
+                        <li data-ejeX='18'><i>1/5</i></li>
+                        <li data-ejeX='45'><i>2/5</i></li>
+                        <li data-ejeX='50'><i>3/5</i></li>
+                        <li data-ejeX='33'><i>4/5</i></li>
+                      </ul>
+                      <ul class='eje-z'>
+                        <li data-ejeZ='2000'></li>
+                        <li data-ejeZ='1500'></li>
+                        <li data-ejeZ='1000'></li>
+                        <li data-ejeZ='500'></li>
+                        <li data-ejeZ='0'></li>
+                      </ul>
+                      <p style="margin: 0; transform: rotate(90deg); position: absolute; top: 40%; right: -5%">Wh/m2</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <!-- Line Chart  -->
@@ -524,11 +558,6 @@
   </div>
 </body>
 
-<script>
-  // chưa dùng js
-  // window.onload = function() {
-  //   document.getElementsByClassName("btn-collapse")[0].focus();
-  // }
-</script>
+<script src="index.js"></script>
 
 </html>

@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  /* background: #394264; */
+  border-radius: 5px;
+  width: 500px;
+  overflow: hidden;
+  /* background-color: #ccc; */
+}
+
+/******************************************** LEFT CONTAINER *****************************************/
+
+
+.bar-chart-block {
+  height: 400px;
+}
+
+
+/******************************************
+↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+ESTILOS PROPIOS DE LOS GRÄFICOS
+↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ 
+GRAFICO LINEAL
+******************************************/
+
+.grafico {
+  padding: 2rem 1rem 1rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #fff;
+  font-size: 80%;
+}
+
+.grafico span {
+  display: block;
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  height: 0;
+  border-top: 2px solid;
+  transform-origin: left center;
+}
+
+.grafico span>span {
+  left: 100%;
+  bottom: 0;
+}
+
+[data-valor]:before {
+  content: '';
+  position: absolute;
+  display: block;
+  right: -4px;
+  bottom: -3px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+[data-valor='23']:after {
+  content: '+' attr(data-valor) '%';
+  position: absolute;
+  right: -2.7rem;
+  top: -1.7rem;
+  padding: .3rem .5rem;
+  background: #50597B;
+  border-radius: .5rem;
+  transform: rotate(45deg);
+}
+
+[class^='eje-'] {
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  width: 100%;
+  padding: 1rem 1rem 0 2rem;
+  height: 80%;
+}
+
+.eje-x {
+  height: 2.5rem;
+}
+
+.eje-y li {
+  height: 25%;
+  border-top: 1px solid #777;
+}
+
+.eje-z li {
+  height: 20%;
+
+}
+
+[data-ejeY]:before {
+  content: attr(data-ejeY);
+  display: inline-block;
+  width: 2rem;
+  text-align: right;
+  line-height: 0;
+  position: relative;
+  left: -2.5rem;
+  top: -.5rem;
+}
+
+[data-ejeZ]:after {
+  content: attr(data-ejeZ);
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  line-height: 0;
+  position: relative;
+  right: -2rem;
+  top: -.5rem;
+}
+
+.eje-x li {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+/**************************
+BAR-CHART
+**************************/
+.grafico.bar-chart {
+  background: #fff;
+  padding: 0 1rem 0rem 1rem;
+  width: 90%;
+  height: 60%;
+  position: relative;
+  color: #000;
+  font-size: 80%;
+}
+
+.bar-chart [class^='eje-'] {
+  padding: 0 3rem 0 3rem;
+  bottom: 1rem;
+  list-style: none;
+}
+
+.bar-chart .eje-x {
+  bottom: 0;
+  list-style: none;
+}
+
+.bar-chart .eje-y li {
+  height: 20%;
+  border-top: 1px solid #000;
+}
+
+.bar-chart .eje-y li {
+  height: 20%;
+}
+
+.bar-chart .eje-x li {
+  width: 14%;
+  position: relative;
+  text-align: center;
+}
+
+.bar-chart .eje-x li i {
+  /* transform: rotatez(-45deg) translatex(-1rem); */
+  transform-origin: 30% 60%;
+  display: block;
+}
+
+.bar-chart .eje-x li:before {
+  content: '';
+  position: absolute;
+  bottom: 1.9rem;
+  width: 20%;
+  right: 15%;
+  box-shadow: 3px 0 rgba(0, 0, 0, .1), 3px -3px rgba(0, 0, 0, .1);
+}
+
+.bar-chart .eje-x li:after {
+  content: '';
+  position: absolute;
+  bottom: 1.9rem;
+  width: 20%;
+  right: 40%;
+  box-shadow: 3px 0 rgba(0, 0, 0, .1), 3px -3px rgba(0, 0, 0, .1);
+}
+
+.bar-chart .eje-x li:nth-child(1):after {
+  background: #CF1322;
+  height: 570%;
+}
+
+.bar-chart .eje-x li:nth-child(2):after {
+  background: #CF1322;
+  height: 900%;
+}
+
+.bar-chart .eje-x li:nth-child(3):after {
+  background: #CF1322;
+  height: 400%;
+}
+
+.bar-chart .eje-x li:nth-child(4):after {
+  background: #CF1322;
+  height: 290%;
+}
+
+.bar-chart .eje-x li:nth-child(5):after {
+  background: #CF1322;
+  height: 720%;
+}
+
+.bar-chart .eje-x li:nth-child(6):after {
+  background: #CF1322;
+  height: 820%;
+}
+
+.bar-chart .eje-x li:nth-child(7):after {
+  background: #CF1322;
+  height: 520%;
+}
+
+.bar-chart .eje-x li:nth-child(1):before {
+  background: #FFC107;
+  height: 270%;
+}
+
+.bar-chart .eje-x li:nth-child(2):before {
+  background: #FFC107;
+  height: 400%;
+}
+
+.bar-chart .eje-x li:nth-child(3):before {
+  background: #FFC107;
+  height: 900%;
+}
+
+.bar-chart .eje-x li:nth-child(4):before {
+  background: #FFC107;
+  height: 790%;
+}
+
+.bar-chart .eje-x li:nth-child(5):before {
+  background: #FFC107;
+  height: 320%;
+}
+
+.bar-chart .eje-x li:nth-child(6):before {
+  background: #FFC107;
+  height: 120%;
+}
+
+.bar-chart .eje-x li:nth-child(7):before {
+  background: #FFC107;
+  height: 920%;
+}
