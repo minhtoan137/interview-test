@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <main id="container">
+      <!-- Menu left -->
+      <div id="left">
+        <div class="wrapper-logo">
+          <img width="116px" height="13px" alt="logo" src="./images/logo.png" />
+        </div>
+
+        <!-- Menu -->
+        <div style="padding: 24px 8px">
+          <menu>
+            <li class="active">
+              <img alt="eye-icon" src="./images/home.png" />
+              Dashboard
+            </li>
+            
+            <li>
+              <img alt="eye-icon" src="./images/bell.png" />
+              Alarm
+            </li>
+
+            <li>
+              <img alt="eye-icon" src="./images/mail.png" />
+              Tickets
+            </li>
+
+            <li>
+              <img alt="eye-icon" src="./images/clipboard-list.png" />
+              Reports
+            </li>
+          </menu>
+        </div>
+
+        <!-- Sites Management -->
+        <div style="padding: 0 35px">
+          <h3 style="margin: 0; color: #BFBFBF; font-size: 12px; font-weight: 700">SITES MANAGEMENT</h3>
+        </div>
+
+        <div style="padding: 24px 8px">
+          <menu>
+            <li>
+              <img alt="eye-icon" src="./images/vector.png" />
+              Sample Plant A
+              <i class="arrow down"></i>
+            </li>
+            
+            <li>
+              <div class="circle-full" style="width: 8px; height: 8px; margin-left: 3px;"></div>
+              Hoa Nang Solar Site
+            </li>
+
+            <li>
+              <div class="circle-full" style="width: 8px; height: 8px; margin-left: 3px;; background-color: #FFC107;"></div>
+              Hoa Nang Solar Site
+            </li>
+
+            <li>
+              <div class="circle-full" style="width: 8px; height: 8px; margin-left: 3px;"></div>
+              Hoa Nang Solar Site
+            </li>
+
+            <li>
+              <div class="circle-full" style="width: 8px; height: 8px; margin-left: 3px;"></div>
+              Hoa Nang Solar Site
+            </li>
+
+            <li>
+              <img alt="eye-icon" src="./images/vector.png" />
+              Sample Plant B
+              <i class="arrow down"></i>
+            </li>
+
+            <li>
+              <img alt="eye-icon" src="./images/vector.png" />
+              Sample Plant C
+              <i class="arrow down"></i>
+            </li>
+          </menu>
+        </div>
+        
+        <!-- Footer Left -->
+        <footer class="footer-left">
+          <menu>
+            <li>
+              <img alt="eye-icon" src="./images/setting.png" />
+              Setting
+            </li>
+            
+            <li>
+              <img alt="eye-icon" src="./images/avatar.png" />
+              Wade Warren
+            </li>
+          </menu>
+
+          <!-- Copryright -->
+          <div style="padding: 0 27px">
+            <span style="color: #BFBFBF; font-size: 12px; font-weight: 400">Copyright ViSCADA 2021. All rights reserved</span>
+          </div>
+        </foot>
+      </div>
+
+      <!--  Content right -->
+      <div id="right">
+        <!-- Filter Header -->
+        <div style="padding: 8px 24px 8px 0; background-color: #fff;">
+          <div class="wrapper-filter">
+            <menu style="flex-direction: row; gap: 12px">
+              <button class="btn-dropdown" style="border: none;">
+                <li class="dropdown active" style="min-width: 190px">
+                  <img alt="eye-icon" src="./images/calendar.png" />
+                  Last 7 days
+                  <i class="arrow down" style="border-color: #2C4BEE"></i>
+                </li>
+  
+  
+                <ul class="menu-dropdown">
+                  <li>Today</li>
+                  <li>Last 7 days</li>
+                  <li>This month</li>
+                  <li>This year</li>
+                </ul>
+              </button>
+  
+              <li class="active" style="min-width: 190px;">
+                <img alt="eye-icon" src="./images/sun.png" />
+                All plant
+                <i class="arrow down" style="border-color: #2C4BEE"></i>
+              </li>
+            </menu>
+          </div>
+        </div>
+
+
+        <!-- Content -->
+        <div style="padding: 24px">
+          <!-- 4 section -->
+          <div class="wrapper-section">
+            <section class="section">
+              <div class="section-title">
+                <h3>Total capacity</h3>
+                <img alt="eye-icon" src="./images/sun.png" />
+              </div>
+
+              <div class="section-content">
+                <span>21312.6<sup>kWp</sup></span>
+                <!-- <img alt="eye-icon" src="./images/eyes.png" /> -->
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="section-title">
+                <h3>Yield</h3>
+                <img alt="eye-icon" src="./images/lightning-bolt.png" />
+              </div>
+
+              <div class="section-content">
+                <span>5231.65<sup>h</sup></span>
+                <span class="percent increase">
+                  <i class="arrow up" style="position: inherit; left: 0; right: auto; border-width: 0 2px 2px 0; border-color: #3DB32C;"></i> 
+                  <span>+12%</span>
+                </span>
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="section-title">
+                <h3>Production</h3>
+                <img alt="eye-icon" src="./images/performance.png" />
+              </div>
+
+              <div class="section-content">
+                <span>33765.32<sup>kWh</sup></span>
+                <span class="percent increase">
+                  <i class="arrow up" style="position: inherit; left: 0; right: auto; border-width: 0 2px 2px 0; border-color: #3DB32C;"></i> 
+                  <span>+12%</span>
+                </span>
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="section-title">
+                <h3>Revenue</h3>
+                <img alt="eye-icon" src="./images/sparkles.png" />
+              </div>
+
+              <div class="section-content">
+                <span>132.654.231<sup>VND</sup></span>
+                <span class="percent increase">
+                  <i class="arrow up" style="position: inherit; left: 0; right: auto; border-width: 0 2px 2px 0; border-color: #3DB32C;"></i> 
+                  <span>+12%</span>
+                </span>
+              </div>
+            </section>
+          </div>
+
+          <br />
+
+          <!-- Map -->
+          <div class="google-map" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.037882325578!2d106.75004801526046!3d10.808410561556913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527768e3eb047%3A0xb557943498dfcd81!2sVi%E1%BB%87t%20An%20Group%20-%20VAG!5e0!3m2!1svi!2s!4v1660455402157!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <br />
+
+          <!-- Chart -->
+          <div class="wrapper-chart">
+            <!-- Left Chart  -->
+            <div class="wrapper-chart-left">
+              <!-- Header Chart  -->
+              <div class="header-chart">
+                <h3 class="title-chart">Sites</h3>
+
+                <div class="group-btn-action">
+                  <div class="btn-action">
+                    <img alt="eye-icon" src="./images/arrows-expand.png" />
+                  </div>
+
+                  <div class="btn-action">
+                    <img alt="eye-icon" src="./images/download.png" />
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Display Data  -->
+              <div class="container-table">
+                <table>
+                  <tr>
+                    <th>
+                      <div class="flex">
+                        <span style="font-size: 14px; font-weight: 500">Sites</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </th>
+
+                    <th>
+                      <div class="flex">
+                        <span style="font-size: 14px; font-weight: 500">Plan</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </th>
+
+                    <th>
+                      <div class="flex">
+                        <span style="font-size: 14px; font-weight: 500">Capacity [kWp]</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </th>
+
+                    <th>
+                      <div class="flex">
+                        <span style="font-size: 14px; font-weight: 500">Production [kWh]</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </th>
+
+                    <th>
+                      <div class="flex">
+                        <span style="font-size: 14px; font-weight: 500">Irradiance [Wh/m²]</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </th>
+
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="flex">
+                        <div class="circle-full"></div>
+                        <span>Hoa Nang Solar</span>
+                      </div>
+                    </td>
+                    <td>Sample Plant A</td>
+                    <td>1,981,79</td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>923.26</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>392.50</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="flex">
+                        <div class="circle-full"></div>
+                        <span>Hoa Nang Solar</span>
+                      </div>
+                    </td>
+                    <td>Sample Plant A</td>
+                    <td>1,981,79</td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>923.26</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>392.50</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="flex">
+                        <div class="circle-full"></div>
+                        <span>Hoa Nang Solar</span>
+                      </div>
+                    </td>
+                    <td>Sample Plant A</td>
+                    <td>1,981,79</td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>923.26</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>392.50</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="flex">
+                        <div class="circle-full"></div>
+                        <span>Hoa Nang Solar</span>
+                      </div>
+                    </td>
+                    <td>Sample Plant A</td>
+                    <td>1,981,79</td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>923.26</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>392.50</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="flex">
+                        <div class="circle-full"></div>
+                        <span>Hoa Nang Solar</span>
+                      </div>
+                    </td>
+                    <td>Sample Plant A</td>
+                    <td>1,981,79</td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>923.26</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>392.50</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="flex">
+                        <div class="circle-full"></div>
+                        <span>Hoa Nang Solar</span>
+                      </div>
+                    </td>
+                    <td>Sample Plant A</td>
+                    <td>1,981,79</td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>923.26</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex" style="flex-direction: column; align-items: start">
+                        <span>392.50</span>
+                        <div class="flex" >
+                          <div class="arrow-down" style="border-top-color: #DC3545;"></div>
+                          <span style="color: #DC3545;">10%</span>
+                        </d>
+                      </div>
+                    </td>
+                  </tr>
+                
+                </table>
+              </div>
+              
+            </div>
+
+            <!-- Right Chart  -->
+            <div class="wrapper-chart-right">
+              <!-- Bar chart  -->
+              <div class="chart bar-chart">
+                <div class="header-chart">
+                  <h3 class="title-chart">Production & Irradiance</h3>
+  
+                  <div class="group-btn-action">
+                    <div class="btn-action">
+                      <img alt="eye-icon" src="./images/arrows-expand.png" />
+                    </div>
+  
+                    <div class="btn-action">
+                      <img alt="eye-icon" src="./images/download.png" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="bar-chart-block block">
+                  <h2 class='titular'>By Country <span>*1000</span></h2>
+                  <div class='grafico bar-chart'>
+                    <ul class='eje-y'>
+                      <li data-ejeY='60'></li>
+                      <li data-ejeY='45'></li>
+                      <li data-ejeY='30'></li>
+                      <li data-ejeY='15'></li>
+                      <li data-ejeY='0'></li>
+                    </ul>
+                    <ul class='eje-x'>
+                      <li data-ejeX='37'><i>España</i></li>
+                      <li data-ejeX='56'><i>Portugal</i></li>
+                      <li data-ejeX='25'><i>Italia</i></li>
+                      <li data-ejeX='18'><i>Grecia</i></li>
+                      <li data-ejeX='45'><i>EE.UU</i></li>
+                      <li data-ejeX='50'><i>México</i></li>
+                      <li data-ejeX='33'><i>Chile</i></li>
+                    </ul>
+                  </div>
+                </div> -->
+              </div>
+
+              <!-- Line Chart  -->
+              <div class="chart line-chart">
+                <div class="header-chart">
+                  <h3 class="title-chart">Inverter Production</h3>
+  
+                  <div class="group-btn-action">
+                    <div class="btn-action">
+                      <img alt="eye-icon" src="./images/arrows-expand.png" />
+                    </div>
+  
+                    <div class="btn-action">
+                      <img alt="eye-icon" src="./images/sun.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
