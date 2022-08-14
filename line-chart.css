@@ -1,0 +1,49 @@
+.quiz-chartTip {
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+  position: absolute;
+  z-index: 50;
+  max-width: 250px;
+}
+
+.quiz-graph {
+  padding: 10px;
+  height: 550px;
+  width: 100%;
+}
+
+.quiz-graph .x-labels {
+  text-anchor: middle;
+}
+
+.quiz-graph .y-labels {
+  text-anchor: end;
+}
+
+.quiz-graph .quiz-graph-grid {
+  stroke: #ccc;
+  stroke-dasharray: 0;
+  stroke-width: 1;
+}
+
+.label-title {
+  text-anchor: middle;
+  font-size: 12px;
+  fill: #2C4BEE;
+  font-weight: bold;
+}
+
+.quiz-graph-dot,
+.quiz-graph-start-dot {
+  fill: rgba(0, 112, 210, 1);
+  stroke-width: 2;
+  stroke: white;
+}
+
+.x-labels text, .y-labels text {
+  fill: #000;
+  font-weight: bold;
+}
